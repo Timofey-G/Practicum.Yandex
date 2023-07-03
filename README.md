@@ -42,8 +42,7 @@
     базы данных из csv
     - провел код-ревью по правам доступа, системе регистрации, аутентификации и
     подтверждения через e-mail.  
-    Python, Django, Django REST Framework, SQLite3, Simple JWT.  
-
+    
     [![Python][Python]][Python-url]
     [![Django][Django]][Django-url]
     [![DRF][DRF]][DRF-url]
