@@ -272,6 +272,7 @@ class PostPagesTests(TestCase):
         )
         self.assertEqual(Comment.objects.count(), comments_count)
 
+    # Кеширование отключено
     # def test_cache_work(self):
     #     post = Post.objects.create(
     #         text="Тестовый текст",
