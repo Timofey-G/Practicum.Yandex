@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% load user_filters %}
+{% load static %}
+{% block title %}
+  Пост {{ post.text|truncatechars:30 }}
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="d-flex align-items-center mt-4">
+    <div class="pe-3">
+      <a href="{% url 'posts:profile' post.author.username %}">
+        {% if post.author.profile_picture %}
+          {% thumbnail post.author.profile_picture "60x60" crop="center" as im %}
+            <img class="rounded-circle" alt="profile_picture" src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+          {% endthumbnail %}
+          {% else %}
+          {% thumbnail "users/picture.jpg" "60x60" crop="center" as im %}
+            <img class="rounded-circle" alt="profile_picture" src="{% static 'img/picture.jpg' %}" width="60" height="60">
+          {% endthumbnail %}
+        {% endif %}
+      </a>
+    </div>
+    <div class="me-auto pt-3">
+      <ul class="list-unstyled">
+        <li>
+          <a class="link_author h5" href="{% url 'posts:profile' post.author.username %}">
+            {% if post.author.get_full_name == '' %} {{ post.author.username }} {% else %} {{ post.author.get_full_name }} {% endif %}
+          </a>
+        </li>
+        <li>
+          {{ post.created|date:"d E Y" }}
+        </li>
+      </ul>
+    </div>
+    {% if post.group %}   
+    <div>
+      <a class="btn btn-outline-dark button" href="{% url 'posts:group_list' post.group.slug %}">
+        Группа {{ post.group }}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+  {% thumbnail post.image "960x339" crop="center" upscale=True as im %}
+    <img class="card-img mt-3" src="{{ im.url }}">
+  {% endthumbnail %}
+  <p class="mt-3">{{ post.text }}</p>
+  <div class="d-flex align-items-center {% if request.user == post.author %}justify-content-between
+  {% else %}justify-content-end{% endif %} mt-5 mb-4">
+    {% if request.user == post.author %}
+      <div>
+        <a class="btn btn-outline-dark button" href="{% url 'posts:post_edit' post.id %}">
+          Редактировать запись
+        </a>                
+      </div>
+    {% endif %}
+    <div>
+      <svg display="none">
+        <symbol viewBox="0 0 800 800" id="heart">
+          <g>
+            <path d="M413,695.7c-7.9,5.3-18.1,5.3-26,0c-61.5-41.1-320.3-224-320.3-396.6C66.7,76.4,328.3,40.8,400,190.8
+              c71.7-150,333.3-114.3,333.3,108.3C733.3,471.7,474.5,654.6,413,695.7L413,695.7z"/>
+        </symbol>
+      </svg>
+      <a class="btn btn-outline-dark btn-sm {% if request.user in post.likes.all %}active{% endif %}" href="{% url 'posts:like' post.id %}" role="button">  
+        <svg class="heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+        {% if post.likes.count != 0 %}
+          {{ post.likes.count }}
+        {% endif %}
+      </a>
+    </div>
+  </div>
+  {% if user.is_authenticated %}
+  <h5 class="pb-3">Добавить комментарий:</h5>
+  <div class="d-flex justify-content-center">
+    <div class="col-11">              
+      <form method="post" action="{% url 'posts:add_comment' post.id %}">
+        {% csrf_token %}      
+        <div class="form-group mb-2">
+          {{ form.text|addclass:"form-control" }}
+        </div>
+        <button type="submit" class="btn btn-outline-dark button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  {% endif %}
+  {% if comments.count != 0 %}
+  <div class="d-flex justify-content-center">
+    <p class="fw-light mt-3 mb-0 pb-0">Комментарии</p>
+  </div>
+  {% endif %}
+  {% if comments.count == 0 and user.is_anonymous %}
+  <div class="d-flex justify-content-center">
+    <p class="fw-light mt-3 mb-5 pb-5">Зарегистрируйтесь/авторизуйтесь чтобы оставить комментарий</p>
+  </div>
+  {% endif %}
+  {% for comment in comments %}
+    <div class="d-flex mt-4">
+      <div class="pe-2">
+        <a href="{% url 'posts:profile' comment.author.username %}">
+          {% if comment.author.profile_picture %}
+            {% thumbnail comment.author.profile_picture "45x45" crop="center" as im %}
+              <img class="rounded-circle" alt="profile_picture" src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+            {% endthumbnail %}
+          {% else %}
+            {% thumbnail "users/picture.jpg" "45x45" crop="center" as im %}
+              <img class="rounded-circle" alt="profile_picture" src="{% static 'img/picture.jpg' %}" width="45" height="45">
+            {% endthumbnail %}
+          {% endif %}
+        </a>
+      </div>
+      <div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="link_author h6" href="{% url 'posts:profile' comment.author.username %}">
+              {% if comment.author.get_full_name == '' %} {{ comment.author.username }} {% else %} {{ comment.author.get_full_name }} {% endif %}
+            </a>
+          </li>
+          <li>
+            {{ comment.created|date:"d E Y" }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="">
+      {{ comment.text }}
+    </div>
+    {% if forloop.last%}
+     <div class="mb-5"></div>
+    {% endif %}
+  {% endfor %} 
+  {% if comments.count == 0 and user.is_authenticated %}
+    <p class="fw-light mt-3 mb-5">Ваш комментарий будет первым!</p>
+  {% endif %}
+</div>
+{% endblock %}

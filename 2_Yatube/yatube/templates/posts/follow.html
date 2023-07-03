@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block title %}
+  Лента новостей
+{% endblock %}
+{% block content %}
+  {% include 'posts/includes/switcher.html' %}
+  <div class="container py-5 pt-0 mt-0">
+    {% for post in page_obj %}
+        {% include 'posts/includes/post_list.html' %}
+    {% endfor %}
+    {% include 'posts/includes/paginator.html' %}
+  </div>
+{% endblock %}

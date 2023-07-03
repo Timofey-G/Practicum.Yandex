@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Ошибка 404{% endblock %}
+{% block content %}
+<div class="container my-5 py-3 border rounded" style="max-width: 700px">
+  <div class="d-flex justify-content-center my-2">
+      <h1>404</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <p>Страницы с адресом {{ path }} не существует</p>
+  </div>
+  <div class="d-flex justify-content-center">
+    <a class="btn btn-outline-dark button" href="{% url 'posts:index' %}">На главную!</a>
+  </div>
+</div>
+{% endblock %}

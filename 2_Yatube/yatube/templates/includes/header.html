@@ -1,0 +1,66 @@
+{% load static %}
+{% load thumbnail %}
+{% with request.resolver_match.view_name as view_name %}
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand pb-2" href="{% url 'posts:index' %}">
+        <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span style="color:#dc3545">Ya</span>tube
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav me-auto p-2">
+            <a class="btn btn-link {% if view_name  == 'about:author' %}active{% endif %}" href="{% url 'about:author' %}">О сайте</a>
+            <a class="btn btn-link {% if view_name  == 'about:tech' %}active{% endif %}" href="{% url 'about:tech' %}">Технологии</a>
+        </div>
+        <div class="navbar-nav">
+          <form class="d-flex p-4" action="{% url 'posts:index' %}">
+            <input class="form-control mr-2" type="search" placeholder="Поиск на странице ..." aria-label="Search" name="search">
+          </form>
+        </div>
+        {% if request.user.is_anonymous %}
+          <ul class="navbar-nav list-group-horizontal d-flex align-items-center justify-content-center">
+            <a class="btn btn-outline-danger {% if view_name  == 'users:login' %}active{% endif %}" href="{% url 'users:login' %}">Войти</a>
+            <a class="btn btn-dark m-2" href="{% url 'users:signup' %}">Регистрация</a>
+          </ul>
+        {% else %}
+          <ul class="navbar-nav list-group-horizontal d-flex align-items-center justify-content-center">
+            <a class="btn btn-outline-danger {% if view_name  == 'posts:post_create' %}active{% endif %}" href="{% url 'posts:post_create' %}">
+              Новая запись
+            </a>
+            <li class="nav-item dropdown ms-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {% if request.user.profile_picture %}
+                  {% thumbnail request.user.profile_picture "45x45" crop="center" as im %}
+                    <img class="rounded-circle" alt="profile_picture" src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                  {% endthumbnail %}
+                {% else %}
+                  {% thumbnail "users/picture.jpg" "45x45" crop="center" as im %}
+                    <img class="rounded-circle" alt="profile_picture" src="{% static 'img/picture.jpg' %}" width="45" height="45">
+                  {% endthumbnail %}
+                {% endif %}
+              </a>
+              <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0.5px, 60px, 0px);">
+                <div class="container">
+                  <li class="dropdown-header py-0"><a style="font-size: 17px">{{ user.username }}</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="btn btn-link {% if view_name  == 'users:profile_change_form' %}active{% endif %} pt-0 pb-1" href="{% url 'users:profile_change_form' request.user.id %}">Профиль</a></li>
+                  <li><a class="btn btn-link {% if view_name  == 'users:password_change_form' %}active{% endif %} py-0" href="{% url 'users:password_change_form' %}">Изменить пароль</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="btn btn-link py-0" href="{% url 'users:logout' %}">Выйти</a></li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </nav> 
+  <hr class="mt-0 pt-0">
+</header>
+{% endwith %}
