@@ -85,21 +85,16 @@
 `git clone https://github.com/Timofey-G/Practicum.Yandex`  
 `cd Practicum.Yandex/2_Yatube`
 2. Создайте и активируйте виртуальное окружение:  
-`python3 -m venv env`  
-`source env/bin/activate`
+`python3 -m venv venv`  
+`source venv/bin/activate`
 3. Установите зависимости:  
 `python -m pip install --upgrade pip`  
 `pip install -r requirements.txt`
-4. Создайте файл `.env`:  
-`touch yatube/yatube/.env`  
-`nano yatube/yatube/.env`  
-в котором укажите:  
-`SECRET_KEY=<ключ>`  
-5. Выполните миграции:  
+4. Выполните миграции:  
 `python yatube/manage.py migrate`
-6. Запустите проект:  
+5. Запустите проект:  
 `python yatube/manage.py runserver`
-7. Готово! Сайт доступен по адресу:  
+6. Готово! Сайт доступен по адресу:  
 `127.0.0.1:8000`
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
