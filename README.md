@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://practicum.yandex.ru/">
-    <img src="images/yandex.png" alt="Logo" width="320" height="154">
+    <img src="images/yandex.png" alt="Logo" width="320" height="73">
   </a>
   <h3 align="center">
     Сборник учебных проектов, реализованных в рамках курса
