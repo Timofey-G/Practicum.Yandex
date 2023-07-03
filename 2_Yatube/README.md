@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/Timofey-G/Yatube">
+  <a href="https://yatim.pythonanywhere.com/">
     <img src="yatube/static/img/logo.png" alt="Logo" width="100" height="100">
   </a>
   <h3 align="center">Yatube</h3>
@@ -8,13 +8,11 @@
     </p>
     <a href="https://yatim.pythonanywhere.com/">Посмотреть Демо</a>
     ·
-    <a href="https://github.com/Timofey-G/Yatube/issues">Сообщить об ошибке</a>
+    <a href="https://github.com/Timofey-G/Practicum.Yandex/issues">Сообщить об ошибке</a>
     ·
-    <a href="https://github.com/Timofey-G/Yatube/pulls">Предложить улучшение</a>
+    <a href="https://github.com/Timofey-G/Practicum.Yandex/pulls">Предложить улучшение</a>
   </p>
 </div>
-
-
 
 <details>
   <summary id="summary">Содержание</summary>
@@ -37,11 +35,10 @@
 </details>
 
 
-
 ## О проекте
 
 <div align="center">
-  <a href="https://github.com/Timofey-G/Yatube">
+  <a href="https://yatim.pythonanywhere.com/">
     <img src="yatube/static/img/start.png" alt="Logo" width="520" height="354">
   </a>
 </div>
@@ -65,7 +62,6 @@
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
 
-
 ### Создано с использованием
 
 * [![Python][Python]][Python-url]
@@ -79,18 +75,17 @@
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
 
-
 ## Начало работы
 
-Команды в инструкции подразумевает использование операционной системы Linux.
+Команды в инструкции подразумевают использование операционной системы Linux.
 
 ### Установка и запуск
 
-1. Клонируйте репозиторий и перейдите в него в командной строке:  
-`git clone https://github.com/Timofey-G/Yatube.git`  
-`cd Yatube`
+1. Клонируйте репозиторий и перейдите в папку с проектом в командной строке:  
+`git clone https://github.com/Timofey-G/Practicum.Yandex`  
+`cd Practicum.Yandex/2_Yatube`
 2. Создайте и активируйте виртуальное окружение:  
-`python3 -m venv env`
+`python3 -m venv env`  
 `source env/bin/activate`
 3. Установите зависимости:  
 `python -m pip install --upgrade pip`  
@@ -100,13 +95,14 @@
 `nano yatube/yatube/.env`  
 в котором укажите:  
 `SECRET_KEY=<ключ>`  
-5. Запустите проект:  
+5. Выполните миграции:  
+`python yatube/manage.py migrate`
+6. Запустите проект:  
 `python yatube/manage.py runserver`
 7. Готово! Сайт доступен по адресу:  
 `127.0.0.1:8000`
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
-
 
 
 ## Вклад
@@ -124,21 +120,23 @@
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
 
-
 ## Контакты
 
-**Тимофей Григоренко**  
+**Тимофей Григоренко:**  
 
+<div>
+  <a href="https://t.me/yo_tima/">
+    <img align="center" src="yatube/static/img/telegram.png" alt="Timofey Grigorenko | Telegram" width="50px"/>  - @yo_tima
+  </a>
+</div>
+<div>
+  <a href="mailto:yotgrig@yandex.ru">
+    <img align="center" src="yatube/static/img/email.png" alt="yo.tgrig@yandex.ru" width="50px"/>
+    - yo.tgrig@yandex.ru
+  </a>
+</div>
 
-<a href="https://t.me/yo_tima/">
-  <img align="center" src="yatube/static/img/telegram.png" alt="Timofey Grigorenko | Telegram" width="50px"/>  - Telegram
-</a>
-<p>
-  <img align="center" src="yatube/static/img/email.png" alt="yo.tgrig@yandex.ru" width="50px"/>
-  - yo.tgrig@yandex.ru
-</p>
-
-**Ссылка на проект:** [https://github.com/Timofey-G/Yatube](https://github.com/Timofey-G/Yatube)  
+**Ссылка на проект:** [https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube)  
 **Ссылка на сайт:** [https://yatim.pythonanywhere.com/](https://yatim.pythonanywhere.com/)
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
