@@ -46,11 +46,11 @@
 
 1. Клонировать репозиторий.
    ```
-   $ git clone git@github.com:dkushlevich/api_yamdb.git
+   $ git clone https://github.com/Timofey-G/Practicum.Yandex
    ```
 2. Cоздать и активировать виртуальное окружение:
     ```
-      $ cd api_yamdb
+      $ cd Practicum.Yandex/3_YaMDb
       $ python -m venv venv
     ```
     Для Windows:
@@ -69,15 +69,15 @@
 
 4. Выполнить миграции:
     ```
-    (venv) $ python manage.py migrate
+    (venv) $ python api_yamdb/manage.py migrate
     ```
 5. Заполнить БД тестовыми данными
     ```
-    (venv) $ python manage.py load_data
+    (venv) $ python api_yamdb/manage.py load_data
     ```
 6. Запустить сервер
     ```
-    (venv) $ python manage.py runserver
+    (venv) $ python api_yamdb/manage.py runserver
     ```
 После выполнения вышеперечисленных инструкций проект доступен по адресу http://127.0.0.1:8000/
 > Подробная документация API доступна после запуска сервера по адресу http://127.0.0.1:8000/redoc/

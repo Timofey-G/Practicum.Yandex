@@ -9,7 +9,7 @@ class Command(BaseCommand):
     help = "load data from csv"
 
     def handle(self, *args, **kwargs):
-        path_to_data = Path(Path.cwd(), "static", "data")
+        path_to_data = Path(Path.cwd(), "api_yamdb", "static", "data")
 
         path_to_users = Path(path_to_data, "users.csv")
         path_to_genre = Path(path_to_data, "genre.csv")
