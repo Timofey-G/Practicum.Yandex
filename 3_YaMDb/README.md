@@ -84,13 +84,13 @@
 
 ## Контакты
 
-**Данила Кушлевич** 
-
-[![Telegram Badge](https://img.shields.io/badge/-dkushlevich-blue?style=social&logo=telegram&link=https://t.me/dkushlevich)](https://t.me/dkushlevich) [![Gmail Badge](https://img.shields.io/badge/-dkushlevich@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:dkushlevich@gmail.com)](mailto:dkushlevich@gmail.com)
-
 **Тимофей Григоренко**  
 
 [![Telegram Badge](https://img.shields.io/badge/-yo_tima-blue?style=social&logo=telegram&link=https://t.me/yo_tima)](https://t.me/yo_tima) [![Gmail Badge](https://img.shields.io/badge/yo.tgrig@yandex.ru-FFCC00?style=flat&logo=ycombinator&logoColor=red&link=mailto:yo.tgrig@yandex.ru)](mailto:yo.tgrig@yandex.ru)
+
+**Данила Кушлевич** 
+
+[![Telegram Badge](https://img.shields.io/badge/-dkushlevich-blue?style=social&logo=telegram&link=https://t.me/dkushlevich)](https://t.me/dkushlevich) [![Gmail Badge](https://img.shields.io/badge/-dkushlevich@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:dkushlevich@gmail.com)](mailto:dkushlevich@gmail.com)
 
 **Кирилл Чебодаев** 
 
