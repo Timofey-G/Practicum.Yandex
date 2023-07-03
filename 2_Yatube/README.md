@@ -51,7 +51,7 @@
 - ставить лайки и писать комментарии, осуществлять поиск по странице, редактировать
 профиль и свои записи.  
 
-Проект покрыт тестами (Unittest), [**размещен на бесплатном хостинге**](https://yatim.pythonanywhere.com/)
+Проект покрыт тестами (**Unittest**), [**размещен на бесплатном хостинге**](https://yatim.pythonanywhere.com/)
 и доступен для демонстрации. Присоединяйтесь! :+1:
 <br />
 
@@ -135,6 +135,7 @@
     - yo.tgrig@yandex.ru
   </a>
 </div>
+</br>
 
 **Ссылка на проект:** [https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube)  
 **Ссылка на сайт:** [https://yatim.pythonanywhere.com/](https://yatim.pythonanywhere.com/)
