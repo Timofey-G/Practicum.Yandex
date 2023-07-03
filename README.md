@@ -12,21 +12,21 @@
 <hr>
 
 
-За время курса освоил основные принципы Python, разработку бэкенда на Django,
-работу с API и REST API, а также изучил алгоритмы, структуры данных и
-управление проектами на удаленном сервере. Успешно применил полученные навыки
-на практике, реализовав 11 учебных проектов.  
+За время курса освоил основные принципы **Python**, разработку бэкенда на **Django**,
+работу с **API** и **REST API**, а также изучил **алгоритмы, структуры данных** и
+**управление проектами на удаленном сервере**. Успешно применил полученные навыки
+на практике, реализовав **11 учебных проектов**.  
 Некоторые из них:
 
 1. Дипломная работа (в процессе).
-2. Социальная сеть Yatube. Платформа, в которой можно:
+2. [**Социальная сеть Yatube**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube). Платформа, в которой можно:
     - зарегистрироваться, добавить фото профиля
     - подписываться на других пользователей, публиковать и просматривать посты,
     используя фильтр по группам/пользователям/подпискам
     - ставить лайки и писать комментарии, осуществлять поиск по странице,
     редактировать профиль и свои записи.  
 
-    Проект покрыт тестами (Unittest), [**размещен на бесплатном хостинге**](https://yatim.pythonanywhere.com/)
+    Проект покрыт тестами (**Unittest**), [**размещен на бесплатном хостинге**](https://yatim.pythonanywhere.com/)
     и доступен для демонстрации.  
 
     [![Python][Python]][Python-url]
@@ -36,7 +36,7 @@
     [![CSS][CSS]][CSS-url]
     [![Bootstrap][Bootstrap]][Bootstrap-url]
     [![Pillow][Pillow]][Pillow-url]
-3. Сервис отзывов YaMDb для различных произведений с REST API (групповой проект):
+3. [**Сервис отзывов YaMDb**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/3_YaMDb) для различных произведений с REST API (групповой проект):
     - разработал модели, view и эндпоинты, кастомную management-команду для импорта
     базы данных из csv
     - провел код-ревью по правам доступа, системе регистрации, аутентификации и
@@ -50,19 +50,21 @@
     [![SQL][SQL]][SQL-url]
 
 
-### Контакты
+## Контакты
 
 **Тимофей Григоренко**  
 
-
-<a href="https://t.me/yo_tima/">
-  <img align="center" src="images/telegram.png" alt="Timofey Grigorenko | Telegram" width="50px"/>  - @yo_tima
-</a>
-
-<a href="mailto:yotgrig@yandex.ru">
-  <img align="center" src="images/email.png" alt="yo.tgrig@yandex.ru" width="50px"/>
-  - yo.tgrig@yandex.ru
-</a>
+<div>
+  <a href="https://t.me/yo_tima/">
+    <img align="center" src="images/telegram.png" alt="Timofey Grigorenko | Telegram" width="50px"/>  - @yo_tima
+  </a>
+</div>
+<div>
+  <a href="mailto:yotgrig@yandex.ru">
+    <img align="center" src="images/email.png" alt="yo.tgrig@yandex.ru" width="50px"/>
+    - yo.tgrig@yandex.ru
+  </a>
+</div>
 
 </br>
 
