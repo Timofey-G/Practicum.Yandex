@@ -107,6 +107,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env
 
 # Spyder project settings
 .spyderproject
@@ -143,5 +144,11 @@ dmypy.json
 
 .mypy_cache
 
-# папка с медиа
-2_Yatube/yatube/media/
+# медиа
+media/
+
+# статика
+static/
+
+# vs code
+.vscode

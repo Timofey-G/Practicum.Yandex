@@ -1,0 +1,9 @@
+click==8.1.6
+Django==4.2.3
+djangorestframework==3.14.0
+djoser==2.2.0
+gunicorn==20.1.0
+Pillow==10.0.0
+psycopg2-binary==2.9.6
+python-dotenv==1.0.0
+reportlab==4.0.4

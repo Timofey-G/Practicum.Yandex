@@ -1,0 +1,43 @@
+version: '3.3'
+
+volumes:
+  pg_data:
+  static:
+  media:
+
+
+services:
+  db:
+    image: postgres:13
+    env_file: .env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+  backend:
+    image: yotim/foodgram_backend
+    env_file: .env
+    volumes:
+      - static:/backend_static/
+      - media:/app/media/
+    depends_on:
+      - db
+    command: >
+      bash -c "python manage.py collectstatic --noinput &&
+               cp -r /app/static /backend_static &&
+               python manage.py migrate --noinput &&
+               python manage.py load_data&&
+               gunicorn --bind 0.0.0.0:8000 backend.wsgi"
+  frontend:
+    image: yotim/foodgram_frontend
+    volumes:
+      - static:/app/result_build/build/
+  nginx:
+    image: nginx:1.19.3
+    ports:
+      - "9001:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - static:/usr/share/nginx/html/
+      - ../docs/:/usr/share/nginx/html/api/docs/
+      - media:/media/
+    depends_on:
+      - backend
