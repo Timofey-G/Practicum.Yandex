@@ -123,7 +123,7 @@
 </div>
 </br>
 
-**Ссылка на проект:** [github.com/Timofey-G](https://github.com/Timofey-G/)  
+**Ссылка на проект:** [github.com/Timofey-G/Practicum.Yandex/tree/main/1_Foodgram](https://github.com/Timofey-G/Practicum.Yandex/tree/main/1_Foodgram)  
 **Ссылка на сайт:** [myfoodgram.myvnc.com](https://myfoodgram.myvnc.com/)
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>

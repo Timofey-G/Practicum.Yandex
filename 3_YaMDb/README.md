@@ -94,4 +94,4 @@
 
 **Кирилл Чебодаев** 
 
-[![Telegram Badge](https://img.shields.io/badge/-codingtvar-blue?style=social&logo=telegram&link=https://t.me/codingtvar)](https://t.me/codingtvar) [![Gmail Badge](https://img.shields.io/badge/-kchebodaevdu125@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:kchebodaevdu125@gmail.com)](mailto:kchebodaevdu125@gmail.com)
+[![Telegram Badge](https://img.shields.io/badge/-codingtv-blue?style=social&logo=telegram&link=https://t.me/codingtvar)](https://t.me/codingtvar) [![Gmail Badge](https://img.shields.io/badge/-kchebodaevdu125@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:kchebodaevdu125@gmail.com)](mailto:kchebodaevdu125@gmail.com)
