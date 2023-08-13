@@ -10,9 +10,9 @@
     </p>
     <a href="https://myfoodgram.myvnc.com/">myfoodgram.myvnc.com</a>
     ·
-    <a href="https://github.com/Timofey-G/">Сообщить об ошибке</a>
+    <a href="https://github.com/Timofey-G/Practicum.Yandex/issues">Сообщить об ошибке</a>
     ·
-    <a href="https://github.com/Timofey-G/">Предложить улучшение</a>
+    <a href="https://github.com/Timofey-G/Practicum.Yandex/pulls">Предложить улучшение</a>
   </p>
 </div>
 
@@ -45,10 +45,23 @@
 - Создавать, публиковать и редактировать рецепты
 - Добавлять их в избранное и список покупок
 - Скачивать общий список ингредиентов в pdf для всех указанных рецептов
-- Просматривать контент других пользователей, подписываться на них
+- Просматривать контент других пользователей, подписываться на них  
 
-Проект доступен по адресу [**myfoodgram.myvnc.com**](https://myfoodgram.myvnc.com/). Присоединяйтесь! :+1:
-<br />
+<div align="center">
+  <a href="https://myfoodgram.myvnc.com/">
+    <img src="images/recipe.png" alt="Logo" width="200" height="200">
+  </a>
+  <a href="https://myfoodgram.myvnc.com/">
+    <img src="images/shopping_list.png" alt="Logo" width="200" height="200">
+  </a>
+  <a href="https://myfoodgram.myvnc.com/">
+    <img src="images/following.png" alt="Logo" width="200" height="200">
+  </a>
+</div>
+</br>
+
+Проект доступен по адресу [**myfoodgram.myvnc.com**](https://myfoodgram.myvnc.com/). Присоединяйтесь! :+1:  
+
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
@@ -57,7 +70,7 @@
 
 На сайте реализован REST API, с помощью которого также можно взаимодействовать со всем функционалом.  
 Полная документация доступна по ссылке: [**myfoodgram.myvnc.com/api/docs/redoc.html**](https://myfoodgram.myvnc.com/api/docs/redoc.html)
-<br />
+</br>
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
