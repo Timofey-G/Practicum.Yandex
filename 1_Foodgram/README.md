@@ -57,6 +57,9 @@
   <a href="https://myfoodgram.myvnc.com/">
     <img src="images/following.png" alt="Logo" width="200" height="200">
   </a>
+  <a href="https://myfoodgram.myvnc.com/">
+    <img src="images/recipes.png" alt="Logo" width="200" height="200">
+  </a>
 </div>
 </br>
 
