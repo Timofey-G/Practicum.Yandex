@@ -62,10 +62,15 @@
   </a>
 </div>
 </br>
+</br>
 
-Проект доступен по адресу [**myfoodgram.myvnc.com**](https://myfoodgram.myvnc.com/). Присоединяйтесь! :+1:  
+Проект запущен на сервере Yandex Cloud в нескольких docker-контейнерах с помощью:  
+* [![Nginx][Nginx]][Nginx-url]
+* [![Gunicorn][Gunicorn]][Gunicorn-url]
 
+Доступен по адресу [**myfoodgram.myvnc.com**](https://myfoodgram.myvnc.com/). Присоединяйтесь! :+1:  
 
+</br>
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
 
@@ -144,3 +149,8 @@
 
 [JS-url]: https://www.javascript.com/
 [JS]: https://img.shields.io/badge/JavaScript-fcdc00?style=for-the-badge&logo=javascript&logoColor=181818
+
+[Nginx-url]: https://nginx.org/
+[Nginx]: https://img.shields.io/badge/Nginx-298729?style=for-the-badge&logo=NGINX
+[Gunicorn-url]: https://gunicorn.org/
+[Gunicorn]: https://img.shields.io/badge/Gunicorn-298729?style=for-the-badge&logo=gunicorn&logoColor=ffffff

@@ -19,7 +19,26 @@
 на практике, реализовав **11 проектов**.  
 Некоторые из них:
 
-1. Дипломная работа (в процессе).
+1. [**Foodgram - Продуктовый Помощник**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube). Дипломный проект в виде сайта, который позволяет:
+    - Создавать, публиковать и редактировать рецепты
+    - Добавлять их в избранное и список покупок
+    - Скачивать общий список ингредиентов в pdf для всех указанных рецептов
+    - Просматривать контент других пользователей, подписываться на них 
+
+    Проект запущен на сервере Yandex Cloud в нескольких docker-контейнерах с помощью:  
+    * [![Nginx][Nginx]][Nginx-url]
+    * [![Gunicorn][Gunicorn]][Gunicorn-url]
+
+    Ссылка на сайт: [**myfoodgram.myvnc.com**](https://myfoodgram.myvnc.com/)
+
+    [![Python][Python]][Python-url]
+    [![Django][Django]][Django-url]
+    [![DRF][DRF]][DRF-url]
+    [![POSTGRES][POSTGRES]][POSTGRES-url]
+    [![Pillow][Pillow]][Pillow-url]
+    [![ReportLab][ReportLab]][ReportLab-url]
+    [![JS][JS]][JS-url]
+
 2. [**Социальная сеть Yatube**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube). Платформа, в которой можно:
     - зарегистрироваться, добавить фото профиля
     - подписываться на других пользователей, публиковать и просматривать посты,
@@ -79,6 +98,8 @@
 [Pillow]: https://img.shields.io/badge/Pillow-3570a0?style=for-the-badge&logo=python&logoColor=ffffff
 [SQL-url]: https://www.sqlite.org/index.html
 [SQL]: https://img.shields.io/badge/SQLite-044a64?style=for-the-badge&logo=sqlite&logoColor=ffffff
+[POSTGRES-url]: https://www.postgresql.org/
+[POSTGRES]: https://img.shields.io/badge/SQL-32658f?style=for-the-badge&logo=postgresql&logoColor=ffffff
 
 [HTML-url]: https://html.com/html5/
 [HTML]: https://img.shields.io/badge/HTML-e24921?style=for-the-badge&logo=html5&logoColor=ffffff
@@ -91,3 +112,14 @@
 [DRF]: https://img.shields.io/badge/Django_Rest_Framework-562d2d?style=for-the-badge&logo=django&logoColor=a30000
 [Simple JWT-url]: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/
 [Simple JWT]: https://img.shields.io/badge/Simple_JWT-562d2d?style=for-the-badge&logo=django&logoColor=a30000
+
+[ReportLab-url]: https://docs.reportlab.com/
+[ReportLab]: https://img.shields.io/badge/ReportLab-11274e?style=for-the-badge
+
+[JS-url]: https://www.javascript.com/
+[JS]: https://img.shields.io/badge/JavaScript-fcdc00?style=for-the-badge&logo=javascript&logoColor=181818
+
+[Nginx-url]: https://nginx.org/
+[Nginx]: https://img.shields.io/badge/Nginx-298729?style=for-the-badge&logo=NGINX
+[Gunicorn-url]: https://gunicorn.org/
+[Gunicorn]: https://img.shields.io/badge/Gunicorn-298729?style=for-the-badge&logo=gunicorn&logoColor=ffffff
