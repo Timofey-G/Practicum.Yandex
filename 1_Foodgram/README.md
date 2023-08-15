@@ -141,7 +141,7 @@
 [DRF-url]: https://www.django-rest-framework.org/
 [DRF]: https://img.shields.io/badge/Django_Rest_Framework-562d2d?style=for-the-badge&logo=django&logoColor=a30000
 [SQL-url]: https://www.postgresql.org/
-[SQL]: https://img.shields.io/badge/SQL-32658f?style=for-the-badge&logo=postgresql&logoColor=ffffff
+[SQL]: https://img.shields.io/badge/Postgre_SQL-32658f?style=for-the-badge&logo=postgresql&logoColor=ffffff
 [Pillow-url]: https://python-pillow.org/
 [Pillow]: https://img.shields.io/badge/Pillow-3570a0?style=for-the-badge&logo=python&logoColor=ffffff
 [ReportLab-url]: https://docs.reportlab.com/

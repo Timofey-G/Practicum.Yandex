@@ -19,7 +19,7 @@
 на практике, реализовав **11 проектов**.  
 Некоторые из них:
 
-1. [**Foodgram - Продуктовый Помощник**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube). Дипломный проект в виде сайта, который позволяет:
+1. [**Foodgram - Продуктовый Помощник**](https://github.com/Timofey-G/Practicum.Yandex/tree/main/1_Foodgram). Дипломный проект в виде сайта, который позволяет:
     - Создавать, публиковать и редактировать рецепты
     - Добавлять их в избранное и список покупок
     - Скачивать общий список ингредиентов в pdf для всех указанных рецептов
@@ -35,6 +35,7 @@
     [![Django][Django]][Django-url]
     [![DRF][DRF]][DRF-url]
     [![POSTGRES][POSTGRES]][POSTGRES-url]
+
     [![Pillow][Pillow]][Pillow-url]
     [![ReportLab][ReportLab]][ReportLab-url]
     [![JS][JS]][JS-url]
@@ -87,7 +88,7 @@
 
 </br>
 
-**Ссылка на проекты:** [https://github.com/Timofey-G/Practicum.Yandex](https://github.com/Timofey-G/Practicum.Yandex)  
+**Ссылка на проекты:** [github.com/Timofey-G/Practicum.Yandex](https://github.com/Timofey-G/Practicum.Yandex)  
 
 
 [Python-url]: https://python.org
@@ -99,7 +100,7 @@
 [SQL-url]: https://www.sqlite.org/index.html
 [SQL]: https://img.shields.io/badge/SQLite-044a64?style=for-the-badge&logo=sqlite&logoColor=ffffff
 [POSTGRES-url]: https://www.postgresql.org/
-[POSTGRES]: https://img.shields.io/badge/SQL-32658f?style=for-the-badge&logo=postgresql&logoColor=ffffff
+[POSTGRES]: https://img.shields.io/badge/Postgre_SQL-32658f?style=for-the-badge&logo=postgresql&logoColor=ffffff
 
 [HTML-url]: https://html.com/html5/
 [HTML]: https://img.shields.io/badge/HTML-e24921?style=for-the-badge&logo=html5&logoColor=ffffff
