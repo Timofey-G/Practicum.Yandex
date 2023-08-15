@@ -133,7 +133,7 @@
 </br>
 
 **Ссылка на проект:** [github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube](https://github.com/Timofey-G/Practicum.Yandex/tree/main/2_Yatube)  
-**Ссылка на сайт:** [yatim.pythonanywhere.com/](https://yatim.pythonanywhere.com/)
+**Ссылка на сайт:** [yatim.pythonanywhere.com](https://yatim.pythonanywhere.com/)
 
 <p align="right">(<a href="#summary">к содержанию</a>)</p>
 
